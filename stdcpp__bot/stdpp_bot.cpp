@@ -20,220 +20,228 @@ bool isprime(int yu){
 	return true;
 }
 void chuli(string x){
-	if(x.find("ÄãºÃ")!=std::string::npos||x.find("hi")!=std::string::npos||x.find("ÄúºÃ")!=std::string::npos){
-		cout<<"ÄúºÃ£¬ÎÒÊÇstdcpp_bot"<<endl;
+	if(x.find("ä½ å¥½")!=std::string::npos||x.find("hi")!=std::string::npos||x.find("æ‚¨å¥½")!=std::string::npos){
+		cout<<"æ‚¨å¥½ï¼Œæˆ‘æ˜¯stdcpp_bot"<<endl;
 	}
-	else if(x.find("¼ÆËãÆ÷")!=std::string::npos||x.find("¼ÆËã")!=std::string::npos){
-		cout<<"ºÃµÄ"<<endl;
-		cout<<"ÇëÊäÈëÄãÐèÒªÊ²Ã´ÀàÐÍµÄ¼ÆËã 1.ÕûÊý 2.·ÖÊý 3.Ð¡Êý"<<endl;
+	else if(x.find("è®¡ç®—å™¨")!=std::string::npos||x.find("è®¡ç®—")!=std::string::npos){
+		cout<<"å¥½çš„"<<endl;
+		cout<<"è¯·è¾“å…¥ä½ éœ€è¦ä»€ä¹ˆç±»åž‹çš„è®¡ç®— 1.æ•´æ•° 2.åˆ†æ•° 3.å°æ•°"<<endl;
 		cin>>n;
 		if(n==1){
-			cout<<"ÇëÊäÈëËãÊ½(*ÊÇ³ÆºÅ,/ÊÇ³ýºÅ£¬):";
+			cout<<"è¯·è¾“å…¥ç®—å¼(*æ˜¯ç§°å·,/æ˜¯é™¤å·ï¼Œ):";
 			cin>>a>>y>>b;
 			if(y=='+'){
-				cout<<"½á¹û:"<<a+b<<endl;
+				cout<<"ç»“æžœ:"<<a+b<<endl;
 			}
 			else if(y=='-'){
-				cout<<"½á¹û:"<<a-b<<endl;
+				cout<<"ç»“æžœ:"<<a-b<<endl;
 			}
 			else if(y=='*'){
-				cout<<"½á¹û:"<<a*b<<endl;
+				cout<<"ç»“æžœ:"<<a*b<<endl;
 			}
 			else if(y=='/'&&b!=0){
-				cout<<"½á¹û:"<<a/b<<"......"<<a%b<<endl;
+				cout<<"ç»“æžœ:"<<a/b<<"......"<<a%b<<endl;
 			}
 			else{
-				cout<<"´íÎó"<<endl;
+				cout<<"é”™è¯¯"<<endl;
 			}
 		}
 		else if(n==2){
-			cout<<"ÇëÊäÈëµÚÒ»¸ö·ÖÊý·ÖÄ¸ºÍ·Ö×Ó(¿Õ¸ñ¸ô¿ª):";
+			cout<<"è¯·è¾“å…¥ç¬¬ä¸€ä¸ªåˆ†æ•°åˆ†æ¯å’Œåˆ†å­(ç©ºæ ¼éš”å¼€):";
 			cin>>a>>b;
-			cout<<"ÇëÊäÈëµÚ¶þ¸öÊýµÄ·ÖÄ¸ºÍ·Ö×Ó(¿Õ¸ñ¸ô¿ª):";
+			cout<<"è¯·è¾“å…¥ç¬¬äºŒä¸ªæ•°çš„åˆ†æ¯å’Œåˆ†å­(ç©ºæ ¼éš”å¼€):";
 			cin>>c>>d;
-			cout<<"ÇëÊäÈëÔËËã·û(*ÊÇ³ËºÅ,/ÊÇ³ýºÅ):";
+			cout<<"è¯·è¾“å…¥è¿ç®—ç¬¦(*æ˜¯ä¹˜å·,/æ˜¯é™¤å·):";
 			cin>>y;
 			if(y=='+'){
 				if(a==c){
-					cout<<"½á¹û:"<<a<<"·ÖÖ®"<<b+d<<endl; 
+					cout<<"ç»“æžœ:"<<a<<"åˆ†ä¹‹"<<b+d<<endl; 
 				}
 				else{
-					cout<<"½á¹û:"<<a*c<<"·ÖÖ®"<<b*c+a*d<<endl;
+					cout<<"ç»“æžœ:"<<a*c<<"åˆ†ä¹‹"<<b*c+a*d<<endl;
 				}
 			}
 			else if(y=='-'){
 				if(a==c){
-					cout<<"½á¹û:"<<a<<"·ÖÖ®"<<b-d<<endl;
+					cout<<"ç»“æžœ:"<<a<<"åˆ†ä¹‹"<<b-d<<endl;
 				}
 				else{
-					cout<<"½á¹û:"<<a*c<<"·ÖÖ®"<<b*c-d*a<<endl;
+					cout<<"ç»“æžœ:"<<a*c<<"åˆ†ä¹‹"<<b*c-d*a<<endl;
 				}
 			}
 			else if(y=='*'){
-				cout<<"½á¹û:"<<a*c<<"·ÖÖ®"<<b*d<<endl; 
+				cout<<"ç»“æžœ:"<<a*c<<"åˆ†ä¹‹"<<b*d<<endl; 
 			}
 			else if(y=='/'){
-				cout<<"½á¹û:"<<a*d<<"·ÖÖ®"<<b*c<<endl;
+				cout<<"ç»“æžœ:"<<a*d<<"åˆ†ä¹‹"<<b*c<<endl;
 			}
 			else{
-				cout<<"´íÁË!"<<endl;
+				cout<<"é”™äº†!"<<endl;
 			}
 		}
 		else if(n==3){
-			cout<<"ÇëÊäÈëËãÊ½(*ÊÇ³ËºÅ£¬/ÊÇ³ýºÅ):";
+			cout<<"è¯·è¾“å…¥ç®—å¼(*æ˜¯ä¹˜å·ï¼Œ/æ˜¯é™¤å·):";
 			cin>>t>>y>>f;
 			if(y=='+'){
-				cout<<"½á¹û:"<<t+f<<endl;
+				cout<<"ç»“æžœ:"<<t+f<<endl;
 			}
 			else if(y=='-'){
-				cout<<"½á¹û:"<<t-f<<endl; 
+				cout<<"ç»“æžœ:"<<t-f<<endl; 
 			}
 			else if(y=='*'){
-				cout<<"½á¹û:"<<t*f<<endl; 
+				cout<<"ç»“æžœ:"<<t*f<<endl; 
 			}
 			else if(y=='/'&&f!=0){
-				cout<<"½á¹û:"<<t/f<<endl;
+				cout<<"ç»“æžœ:"<<t/f<<endl;
 			}
 			else{
-				cout<<"ÄãÔÚ¸ÉÂï???"<<endl;
+				cout<<"ä½ åœ¨å¹²å˜›???"<<endl;
 			}
 		}
 		else{
-			cout<<"´íÎó£¬Äã¸ÉÂï"<<endl;
+			cout<<"é”™è¯¯ï¼Œä½ å¹²å˜›"<<endl;
 		}
 	}
-	else if(x.find("ÌáÐÑÎÒ")!=std::string::npos||x.find("¼ÆÊ±")!=std::string::npos){
-		cout<<"ºÃµÄ"<<endl;
+	else if(x.find("æé†’æˆ‘")!=std::string::npos||x.find("è®¡æ—¶")!=std::string::npos){
+		cout<<"å¥½çš„"<<endl;
 		sleep(1);
-		cout<<"ÊäÈëÒ»ÏÂÄãÒª¼¸Ð¡Ê±:";
+		cout<<"è¾“å…¥ä¸€ä¸‹ä½ è¦å‡ å°æ—¶:";
 		cin>>a;
-		cout<<"ÊäÈëÒ»ÏÂÄãÒª¼¸·ÖÖÓ:";
+		cout<<"è¾“å…¥ä¸€ä¸‹ä½ è¦å‡ åˆ†é’Ÿ:";
 		cin>>b;
-		cout<<"ÊäÈëÒ»ÏÂÒª¼¸ÃëÖÓ:";
+		cout<<"è¾“å…¥ä¸€ä¸‹è¦å‡ ç§’é’Ÿ:";
 		cin>>c;
-		cout<<"¿ªÊ¼¼ÆÊ±"<<endl;
+		cout<<"å¼€å§‹è®¡æ—¶"<<endl;
 		sleep(a*3600+b*60+c);
-		cout<<"¼ÆÊ±Íê³É"<<endl;
+		cout<<"è®¡æ—¶å®Œæˆ"<<endl;
 	}
-	else if(x.find("ÊýÑ§")!=std::string::npos||x.find("ÊýÑ§×÷Òµ")!=std::string::npos){
-		cout<<"ºÃ£¬ÎÒÀ´°ïÄã"<<endl;
+	else if(x.find("æ•°å­¦")!=std::string::npos||x.find("æ•°å­¦ä½œä¸š")!=std::string::npos){
+		cout<<"å¥½ï¼Œæˆ‘æ¥å¸®ä½ "<<endl;
 		sleep(1);
-		cout<<"ÒªÊ²Ã´ÀàÐÍµÄ 1.»»ËãÆ÷ 2.ÖÊÊý 3.½×³Ë :";
+		cout<<"è¦ä»€ä¹ˆç±»åž‹çš„ 1.æ¢ç®—å™¨ 2.è´¨æ•° 3.é˜¶ä¹˜ :";
 		cin>>n;
 		if(n==1){
-			cout<<"ÇëÊäÈëÐèÒªÊ²Ã´µÄ 1.ÄÚ´æ 2.Ãæ»ý 3.³¤¶È"<<endl;
+			cout<<"è¯·è¾“å…¥éœ€è¦ä»€ä¹ˆçš„ 1.å†…å­˜ 2.é¢ç§¯ 3.é•¿åº¦"<<endl;
 			cin>>d;
 			if(d==1){
-				cout<<"Ö¾Í¬ÏàºÏ°¡£¬ÎÒÃÇ¶¼Á·"<<endl;
-				cout<<"ÇëÊäÈë¶àÉÙbit:";
+				cout<<"å¿—åŒç›¸åˆå•Šï¼Œæˆ‘ä»¬éƒ½ç»ƒ"<<endl;
+				cout<<"è¯·è¾“å…¥å¤šå°‘bit:";
 				cin>>a;
-				cout<<"Ò»¹²ÓÐ:"<<a/8<<"byte"<<endl;
-				cout<<"Ò»¹²ÓÐ:"<<a/8/1024<<"kb"<<endl;
-				cout<<"Ò»¹²ÓÐ:"<<a/8/1024/1024<<"MB"<<endl;
+				cout<<"ä¸€å…±æœ‰:"<<a/8<<"byte"<<endl;
+				cout<<"ä¸€å…±æœ‰:"<<a/8/1024<<"kb"<<endl;
+				cout<<"ä¸€å…±æœ‰:"<<a/8/1024/1024<<"MB"<<endl;
 				system("pause"); 
 			}
 			else if(d==2){
-				cout<<"ÇëÊäÈë¼¸Æ½·½ÀåÃ×:";
+				cout<<"è¯·è¾“å…¥å‡ å¹³æ–¹åŽ˜ç±³:";
 				cin>>a;
-				cout<<"Æ½·½Ã×:"<<a/10000<<endl;
-				cout<<"Æ½·½Ç§Ã×:"<<a/1000000<<endl;
+				cout<<"å¹³æ–¹ç±³:"<<a/10000<<endl;
+				cout<<"å¹³æ–¹åƒç±³:"<<a/1000000<<endl;
 				system("pause");
 			}
 			else if(d==3){
-				cout<<"ÇëÊäÈë¼¸ÀåÃ×:";
+				cout<<"è¯·è¾“å…¥å‡ åŽ˜ç±³:";
 				cin>>a;
-				cout<<"·ÖÃ×:"<<a/10<<endl;
-				cout<<"Ã×:"<<a/100<<endl;
+				cout<<"åˆ†ç±³:"<<a/10<<endl;
+				cout<<"ç±³:"<<a/100<<endl;
 				system("pause");
 			}
 			else{
-				cout<<"Äã´ò´í×ÖÁË!!!"<<endl;
+				cout<<"ä½ æ‰“é”™å­—äº†!!!"<<endl;
 			}
 		}
 		else if(n==2){
-			cout<<"ÊäÈëÒ»¸öÊý£¬ÎÒÀ´ÅÐ¶ÏÊÇ²»ÊÇÖÊÊý:";
+			cout<<"è¾“å…¥ä¸€ä¸ªæ•°ï¼Œæˆ‘æ¥åˆ¤æ–­æ˜¯ä¸æ˜¯è´¨æ•°:";
 			cin>>a;
 			if(isprime(a)==true){
-				cout<<"Õâ¸öÊÇÖÊÊý"<<endl;
+				cout<<"è¿™ä¸ªæ˜¯è´¨æ•°"<<endl;
 			}
 			else{
-				cout<<"Õâ¸ö²»ÊÇÖÊÊý"<<endl;
+				cout<<"è¿™ä¸ªä¸æ˜¯è´¨æ•°"<<endl;
 			}
 		}
 		else if(n==3){
-			cout<<"ÊäÈëÒªÇó¼¸µÄ½×³Ë:";
+			cout<<"è¾“å…¥è¦æ±‚å‡ çš„é˜¶ä¹˜:";
 			cin>>a;
 			b=1;
 			for(int i=1;i<=a;i++){
 				b=b*a;
 			}
-			cout<<"½á¹û:"<<b<<endl;
+			cout<<"ç»“æžœ:"<<b<<endl;
 		}
 		else{
-			cout<<"£¿£¿£¿"<<endl;
+			cout<<"ï¼Ÿï¼Ÿï¼Ÿ"<<endl;
 		}
 	}
-	else if(x.find("ÓÎÏ·")!=std::string::npos){
-		cout<<"¸øÄãÍæÍæÓÎÏ·"<<endl;
+	else if(x.find("æ¸¸æˆ")!=std::string::npos){
+		cout<<"ç»™ä½ çŽ©çŽ©æ¸¸æˆ"<<endl;
 		sleep(1);
-		system("start ÓÎÏ·.exe");
+		system("start æ¸¸æˆ.exe");
 	}
-	else if(x.find("Ëµ³ª")!=std::string::npos){
-		cout<<"À´¿´¿´ØÔÕßÁé·çµÄ¸è"<<endl;
+	else if(x.find("è¯´å”±")!=std::string::npos){
+		cout<<"æ¥çœ‹çœ‹å¦è€…çµé£Žçš„æ­Œ"<<endl;
 		sleep(1);
 		system("start https://music.163.com/#/song?id=1895164923"); 
 	}
-	else if(x.find("±à³Ì")!=std::string::npos||x.find("c++")!=std::string::npos||x.find("py")!=std::string::npos){
-		cout<<"ÄãÑ§±à³Ì,Ì«ºÃÁË"<<endl;
+	else if(x.find("ç¼–ç¨‹")!=std::string::npos||x.find("c++")!=std::string::npos||x.find("py")!=std::string::npos){
+		cout<<"ä½ å­¦ç¼–ç¨‹,å¤ªå¥½äº†"<<endl;
 	}
-	else if(x.find("²Ëµ¥")!=std::string::npos){
-		cout<<"¹¦ÄÜ:"<<endl;
-		cout<<"(ÊäÈëÕâÐ©¹Ø¼ü×Ö¿ÉÒÔ»ñµÃ)"<<endl;
-		cout<<"¼ÆËã£¬ÊýÑ§£¬ÓÎÏ·£¬Ëµ³ª"<<endl;
+	else if(x.find("èœå•")!=std::string::npos){
+		cout<<"åŠŸèƒ½:"<<endl;
+		cout<<"(è¾“å…¥è¿™äº›å…³é”®å­—å¯ä»¥èŽ·å¾—)"<<endl;
+		cout<<"è®¡ç®—ï¼Œæ•°å­¦ï¼Œæ¸¸æˆï¼Œè¯´å”±"<<endl;
 		sleep(1);
 	}
-	else if(x.find("Éµ±Æ")!=std::string::npos||x.find("250")!=std::string::npos||x.find("cnm")!=std::string::npos){
-		cout<<"ÏµÍ³¼à²âÄúÔÚËµÔà»°"<<endl;
+	else if(x.find("å‚»é€¼")!=std::string::npos||x.find("250")!=std::string::npos||x.find("cnm")!=std::string::npos){
+		cout<<"ç³»ç»Ÿç›‘æµ‹æ‚¨åœ¨è¯´è„è¯"<<endl;
+	}
+	else if(x.find("å…¶ä»–åŠŸèƒ½")!=std::string::npos){
+		system("start å…¶ä»–åŠŸèƒ½.exe"); 
+	}
+	else if(x.find("æ¸…ç©º")!=std::string::npos){
+		cout<<"å¥½æ»´"<<endl;
+		sleep(1);
+		system("cls");
 	}
 	else{
 		d=rand()%2;
 		if(d==0){
-			cout<<"ÎÒÌý²»¶®°¡£¬ÊäÈë²Ëµ¥ÁË½âÒ»ÏÂÎÒµÄ¹¦ÄÜ°É"<<endl;
+			cout<<"æˆ‘å¬ä¸æ‡‚å•Šï¼Œè¾“å…¥èœå•äº†è§£ä¸€ä¸‹æˆ‘çš„åŠŸèƒ½å§"<<endl;
 		}
 		else if(d==1){
-			cout<<"Òª²»ÌýÌý¸è? 1.ºÃ 2.²»ÓÃÁË"<<endl;
+			cout<<"è¦ä¸å¬å¬æ­Œ? 1.å¥½ 2.ä¸ç”¨äº†"<<endl;
 			cin>>n;
 			if(n==1){
 				system("start https://music.163.com/#/song?id=2048824267"); 
 			}
 			else{
-				cout<<"ºÃµÎ"<<endl;
+				cout<<"å¥½æ»´"<<endl;
 			}
 		}
 		else{
-			cout<<"ÎÒºÃÏñÌý²»¶®,ÊäÈë¼ÆËã£¬ÎÒÀ´°ïÄã×öÊýÑ§×÷Òµ"<<endl;
+			cout<<"æˆ‘å¥½åƒå¬ä¸æ‡‚,è¾“å…¥è®¡ç®—ï¼Œæˆ‘æ¥å¸®ä½ åšæ•°å­¦ä½œä¸š"<<endl;
 		}
 	}
 	sleep(1);
 	return;
 } 
 int main(){
-	cout<<"ÄãºÃ°¡£¬ÎÒÊÇstdcpp_bot,ÒÔºóÎÒ½Ð×Ô¼ºstdÀ²!"<<endl;
-	cout<<"Äã½ÐÊ²Ã´:";
+	cout<<"ä½ å¥½å•Šï¼Œæˆ‘æ˜¯stdcpp_bot,ä»¥åŽæˆ‘å«è‡ªå·±stdå•¦!"<<endl;
+	cout<<"ä½ å«ä»€ä¹ˆ:";
 	cin>>name;
-	if(name=="ÖÊ×Ó"||name=="zhizi"){
-		cout<<"Â¡ÖØ»¶Ó­"<<endl;
+	if(name=="è´¨å­"||name=="zhizi"){
+		cout<<"éš†é‡æ¬¢è¿Ž"<<endl;
 	}
 	else{
-		cout<<"ÄãºÃ°¡,"<<name<<endl;
+		cout<<"ä½ å¥½å•Š,"<<name<<endl;
 	}
 	sleep(1);
-	cout<<"std:ÊäÈë²Ëµ¥¿ÉÒÔ´ò¿ªÎÒµÄËùÓÐ¹¦ÄÜÅ¶"<<endl;
+	cout<<"std:è¾“å…¥èœå•å¯ä»¥æ‰“å¼€æˆ‘çš„æ‰€æœ‰åŠŸèƒ½å“¦"<<endl;
 	while(1==1){
 		cout<<name<<":";
 		cin>>str;
-		if(str=="ÔÙ¼û"){
-			cout<<"ÔÙ¼û!"<<endl;
+		if(str=="å†è§"){
+			cout<<"å†è§!"<<endl;
 			sleep(1);
 			return 0;
 		}
