@@ -165,7 +165,7 @@ void chuli(string x){
 			cin>>a;
 			b=1;
 			for(int i=1;i<=a;i++){
-				b=b*a;
+				b=b*i;
 			}
 			cout<<"结果:"<<b<<endl;
 		}
