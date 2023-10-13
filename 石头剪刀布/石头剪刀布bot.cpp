@@ -2,27 +2,19 @@
 #include <cstdlib>
 #include <unistd.h>
 using namespace std;
-int flag,td[10000],a,b,cnt,ans,aaa;
+int flag,td[10000],a,b,cnt,ans,aaa,awa=1;
 string name;
 int main(){
-  cout<<"»¶Ó­À´µ½Ê¯Í·¼ôµ¶²¼»úÆ÷ÈË"<<endl;
-  cout<<"ÇëÊäÈëÄãµÄÃû×Ö:";
+  cout<<"æ¬¢è¿Žæ¥åˆ°çŸ³å¤´å‰ªåˆ€å¸ƒæœºå™¨äºº"<<endl;
+  cout<<"è¯·è¾“å…¥ä½ çš„åå­—:";
   cin>>name;
-  cout<<"»¶Ó­,"<<name<<endl;
+  cout<<"æ¬¢è¿Ž,"<<name<<endl;
   sleep(1);
   system("cls");
-  while(true){
-    cout<<"ÇëÊäÈëÄãÒª³öÊ²Ã´"<<endl<<"1.Ê¯Í·"<<endl<<"2.¼ôµ¶"<<endl<<"3.²¼"<<endl;
-    cin>>a;
-    if(a>=4||a<1){
-      cout<<"ÎÞÐ§µÄÑ¡Ïî"<<endl;
-      sleep(1);
-      break;
-    }
-    else{
+  while(awa<=5){
       aaa++;
       if(aaa==1||aaa==2){
-        b=rand()%2;
+        b=1;
       }
       else if(td[aaa-1]==1){
         b=3;
@@ -37,16 +29,23 @@ int main(){
         a=3;
       }
       td[aaa]=a;
+      awa++;
+    cout<<"è¯·è¾“å…¥ä½ è¦å‡ºä»€ä¹ˆ"<<endl<<"1.çŸ³å¤´"<<endl<<"2.å‰ªåˆ€"<<endl<<"3.å¸ƒ"<<endl;
+    cin>>a;
+    if(a>=4||a<1){
+      cout<<"æ— æ•ˆçš„é€‰é¡¹"<<endl;
+      sleep(1);
+      break;
     }
-    if(a==1&&b==1&&a==2&&b==2||a==1&&b==2){
-      cout<<"Æ½¾Ö"<<endl;
+    if(a==1&&b==1||a==2&&b==2||a==1&&b==2){
+      cout<<"å¹³å±€"<<endl;
     }
     else if(a==1&&b==2||a==2&&b==3||a==3&&b==1){
       cout<<"you win!"<<endl;
       cnt++;
     }
     else{
-      cout<<"mr win!"<<endl;
+      cout<<"my win!"<<endl;
       ans++;
     }
     cout<<cnt<<":"<<ans<<endl;
